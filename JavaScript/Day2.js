@@ -119,22 +119,30 @@
 // }
 
 // MULTIPLE ERROR
-try{
-    const age = 22;
-    age.toUpperCase();
-}
-catch (error)
-{
-    if (error.name === "TypeError")
-    {
-        console.log("Wrong data type");
-    }
-    else if(error.name === "ReferencError")
-    {
-        console.log("variable not found");
-    }
-    else
-    {
-        console.log("some other error occured");
-    }
-}
+// try{
+//     const age = 22;
+//     age.toUpperCase();
+// }
+// catch (error)
+// {
+//     if (error.name === "TypeError")
+//     {
+//         console.log("Wrong data type");
+//     }
+//     else if(error.name === "ReferencError")
+//     {
+//         console.log("variable not found");
+//     }
+//     else
+//     {
+//         console.log("some other error occured");
+//     }
+// }
+
+const fs = reuire("fs");
+fs.writeFileSync("")
+console.log("file created successfully");
+
+
+
+// js prog to create and manage a student record using file handling, exception handling
