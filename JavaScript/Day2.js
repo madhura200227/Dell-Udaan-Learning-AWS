@@ -6,7 +6,7 @@
 
 // const fs = require("fs");
 // const data = fs.readFileSync("Student.txt","utf8");
-// console.log("data")
+// console.log("data");
 
 // // apend
 // const fs = require("fs");
@@ -15,8 +15,8 @@
 
 // const fs = require("fs");
 // const result = fs.existsSync("Student.txt");
-// console.log(result)
+// console.log(result);
 
 const fs = require("fs");
 fs.unlinkSync("student.txt");
-console.log("File deleted successfully")
+console.log("File deleted successfully");
