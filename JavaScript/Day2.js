@@ -1,10 +1,11 @@
-// // FS is file system
+// // FS is file system Operation
+// writeFileSync : is a method of node.js 
 // const fs = require("fs");
 // fs.writeFileSync("Student.txt", "My name is madhura");
 // console.log("file created successfully");
 
 // const fs = require("fs");
-// fs.readFileSync("Student.txt","utf8");
+// const data = fs.readFileSync("Student.txt","utf8");
 // console.log("data")
 
 // // apend
@@ -16,3 +17,6 @@
 // const result = fs.existsSync("Student.txt");
 // console.log(result)
 
+const fs = require("fs");
+fs.unlinkSync("student.txt");
+console.log("File deleted successfully")
