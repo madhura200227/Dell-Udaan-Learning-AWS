@@ -17,6 +17,124 @@
 // const result = fs.existsSync("Student.txt");
 // console.log(result);
 
-const fs = require("fs");
-fs.unlinkSync("student.txt");
-console.log("File deleted successfully");
+// const fs = require("fs");
+// fs.unlinkSync("student.txt");
+// console.log("File deleted successfully");
+
+// types of errors in JS
+
+// // SYNTAX ERROR
+// console.log("Hello World 
+// // REFERENCE ERROR ReferenceError: studentName is not defined
+// console.log(studentName);
+// // TYPE ERROR
+// const age = 11;
+// age.toUpperCase();
+// // RANGE ERROR
+// const badlist = [-2]
+
+// // EXCEPTION HANDLING
+// try
+// {
+//     // code that produces error
+// }
+// catch
+// {
+//     // handle the error
+// }
+// try
+// {
+//     console.log(studentName);
+// }
+// catch (error)
+// {
+//     console.log("something went wrong")
+// }
+
+// error.message provides descriptive message
+// error.name gives error's type or name of the error
+// try
+// {
+//     console.log(studentName);
+// }
+// catch (error)
+// {
+//     console.log(error.message);
+// }
+
+// try 
+// {
+//     const age =25;
+//     age.toUpperCase();
+// }
+// catch (error)
+// {
+//     console.log("error name", error.name);
+//     console.log("error message", error.message)
+// }
+
+// try
+// {
+//     console.log("Program Started");
+//     console.log(studentName);
+// }
+// catch (error)
+// {
+//     console.log("Error Occured");
+// }
+// finally
+// {
+//     console.log("Exiting the program")
+// }
+
+// try
+// {
+//     let named = ("my name is madhura");
+//     console.log(named);
+//     console.log(named.toUpperCase());    
+// }
+// catch (error)
+// {
+//     console.log("Error Name : ", error.name);
+//     console.log("Error Message : ", error.message)
+// }
+// finally
+// {
+//     console.log("Program executed")
+// }
+
+// const mark = 25;
+// try
+// {
+//     if (marks < 40)
+//     {
+//         throw new Error("Student Has Failed");
+//     }
+//     console.log("Student has passed");
+// }
+// catch (error)
+// {
+//     console.log("error name: ", error.name);
+//     console.log("error message: ", error.message);
+// }
+
+// MULTIPLE ERROR
+try{
+    const age = 22;
+    age.toUpperCase();
+}
+catch (error)
+{
+    if (error.name === "TypeError")
+    {
+        console.log("Wrong data type");
+    }
+    else if(error.name === "ReferencError")
+    {
+        console.log("variable not found");
+    }
+    else
+    {
+        console.log("some other error occured");
+    }
+}
