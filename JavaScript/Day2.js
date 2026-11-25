@@ -139,10 +139,31 @@
 //     }
 // }
 
-const fs = reuire("fs");
-fs.writeFileSync("")
-console.log("file created successfully");
+// Q1
+const fs = require("fs");
 
+// Create a file
+fs.writeFileSync(
+    "Student.txt",
+    "Student name : Madhura, Course : JS, Duration : 3 months"
+);
 
+console.log("File created successfully");
+
+// Read the file
+const data = fs.readFileSync("Student.txt", "utf8");
+console.log("Before modification:");
+console.log(data);
+
+// Append content to the file
+fs.appendFileSync("Student.txt", "\nHii How are you??????");
+
+console.log("Modified the file");
+
+// Read again to see the updated content
+const updatedData = fs.readFileSync("Student.txt", "utf8");
+
+console.log("After modification:");
+console.log(updatedData);
 
 // js prog to create and manage a student record using file handling, exception handling
