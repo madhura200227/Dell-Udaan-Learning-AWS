@@ -1,1 +1,2 @@
-Student name : Madhura, Course : JS, Duration : 3 mmonthsHii How are you??????
+Student name : Madhura, Course : JS, Duration : 3 months
+Hii How are you??????

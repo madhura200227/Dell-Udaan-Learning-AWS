@@ -139,31 +139,49 @@
 //     }
 // }
 
-// Q1
-const fs = require("fs");
+// // Q1
+// const fs = require("fs");
 
-// Create a file
-fs.writeFileSync(
-    "Student.txt",
-    "Student name : Madhura, Course : JS, Duration : 3 months"
-);
+// // Create a file
+// fs.writeFileSync(
+//     "Student.txt",
+//     "Student name : Madhura, Course : JS, Duration : 3 months"
+// );
 
-console.log("File created successfully");
+// console.log("File created successfully");
 
-// Read the file
-const data = fs.readFileSync("Student.txt", "utf8");
-console.log("Before modification:");
-console.log(data);
+// // Read the file
+// const data = fs.readFileSync("Student.txt", "utf8");
+// console.log("Before modification:");
+// console.log(data);
 
-// Append content to the file
-fs.appendFileSync("Student.txt", "\nHii How are you??????");
+// // Append content to the file
+// fs.appendFileSync("Student.txt", "\nHii How are you??????");
 
-console.log("Modified the file");
+// console.log("Modified the file");
 
-// Read again to see the updated content
-const updatedData = fs.readFileSync("Student.txt", "utf8");
+// // Read again to see the updated content
+// const updatedData = fs.readFileSync("Student.txt", "utf8");
 
-console.log("After modification:");
-console.log(updatedData);
+// console.log("After modification:");
+// console.log(updatedData);
 
 // js prog to create and manage a student record using file handling, exception handling
+const fs =require("fs");
+try
+{
+    fs.writeFileSync("record.txt", "name : Amit \nmarks : 75 \ncourse : javascript");
+    console.log("file created successfully");
+    const data = fs.readFileSync("record.txt", "utf8");
+    console.log("file reading done");
+    console.log(data);
+}
+catch (error)
+{
+    console.loh(error.name);
+    console.log(error.message);
+}
+finally
+{
+    console.log("Student record process completed")
+}
